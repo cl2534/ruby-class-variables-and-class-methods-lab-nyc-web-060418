@@ -42,12 +42,6 @@ class Song
     end 
     @genre_hash
   end 
-  # describe ".genre_count" do 
-  #   it "is a class method that returns a hash of genres and the number of songs that have those genres" do 
-  #     expect(Song.genre_count).to eq({"pop" => 1, "rap" => 2})
-  #   end
-  # end
-
   
   def self.artist_count 
     @artist_hash = {}
