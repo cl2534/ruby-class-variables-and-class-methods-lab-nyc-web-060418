@@ -50,7 +50,19 @@ class Song
 
   
   def self.artist_count 
-    
+    @genre_hash = {}
+    @genre_count = 1 
+    #["rap", "rap", "pop"]
+    @@genres.each_with_index do |i, index|
+      if i == @@genres[index-1]
+        @genre_count += 1 
+      else 
+        @genre_count = 1 
+      end
+      @genre_hash["#{i}"] = @genre_count
+    end 
+    @genre_hash
+  end 
   end 
 
   # describe ".artist_count" do 
