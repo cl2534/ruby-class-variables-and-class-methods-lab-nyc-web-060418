@@ -62,7 +62,6 @@ class Song
     end 
     @artist_hash
   end 
-  end 
 
   # describe ".artist_count" do 
   #   it "is a class method that returns a hash of artists and the number of songs that have those artists" do 
