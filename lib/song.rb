@@ -56,11 +56,11 @@ class Song
       if i == @@artists[index-1]
         @artist_count += 1 
       else 
-        @genre_count = 1 
+        @artist_count = 1 
       end
-      @genre_hash["#{i}"] = @genre_count
+      @artist_hash["#{i}"] = @artist_count
     end 
-    @genre_hash
+    @artist_hash
   end 
   end 
 
